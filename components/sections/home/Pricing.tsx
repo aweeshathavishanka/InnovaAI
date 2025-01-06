@@ -16,6 +16,10 @@ const pricingPlans = [
       "Limited analytics dashboard",
     ],
     paymentLink: "https://buy.stripe.com/test_6oE8y52ST9az6645kl",
+    priceId:
+      process.env.NODE_ENV === "development"
+        ? "price_1QeDasSELYy8MzLXcX5x3ePe"
+        : "",
   },
   {
     id: 2,
@@ -30,6 +34,10 @@ const pricingPlans = [
       "Priority email support",
     ],
     paymentLink: "https://buy.stripe.com/test_bIYg0x655biHgKI5km",
+    priceId:
+      process.env.NODE_ENV === "development"
+        ? "price_1QeDasSELYy8MzLXbwbUhUZE"
+        : "",
   },
   {
     id: 3,
@@ -45,6 +53,10 @@ const pricingPlans = [
       "24/7 priority support",
     ],
     paymentLink: "https://buy.stripe.com/test_00g3dL2STgD1fGE4gj",
+    priceId:
+      process.env.NODE_ENV === "development"
+        ? "price_1QeDasSELYy8MzLXGo8WK0U9"
+        : "",
   },
 ];
 

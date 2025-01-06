@@ -3,6 +3,7 @@ import logo from "@/public/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
   return (
@@ -14,25 +15,31 @@ export default function Header() {
             <h1 className=" text-xl font-medium">InnovaAI</h1>
           </Link>
         </div>
-        <div>
+        <div className=" flex items-center gap-4">
           <Button
             className=" rounded-full text-black hover:text-primary"
             variant={"link"}>
             <Link href={"/login"}>Pricing</Link>
           </Button>
-          <Button
-            className=" rounded-full text-black hover:text-primary"
-            variant={"link"}>
-            <Link href={"/login"}>Your Posts</Link>
-          </Button>
-          <Button
-            className=" rounded-full text-black hover:text-primary"
-            variant={"link"}>
-            <Link href={"/login"}>Upload a Video</Link>
-          </Button>
-          <Button className=" rounded-full" variant={"outline"}>
-            <Link href={"/sign-in"}>Sign In</Link>
-          </Button>
+
+          <SignedOut>
+            <Button className=" rounded-full" variant={"outline"}>
+              <Link href={"/sign-in"}>Sign In</Link>
+            </Button>
+          </SignedOut>
+          <SignedIn>
+            <Button
+              className=" rounded-full text-black hover:text-primary"
+              variant={"link"}>
+              <Link href={"/login"}>Your Posts</Link>
+            </Button>
+            <Button
+              className=" rounded-full text-black hover:text-primary"
+              variant={"link"}>
+              <Link href={"/login"}>Upload a Video</Link>
+            </Button>
+            <UserButton />
+          </SignedIn>
         </div>
       </div>
     </nav>

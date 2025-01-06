@@ -6,7 +6,7 @@ export default function Footer() {
     <div>
       <div className=" border-t py-10">
         <div className=" max-w-7xl mx-auto">
-          <div>
+          <div className=" flex items-center justify-between text-xs">
             <h1 className=" text-gray-500">
               Built By{" "}
               <Link
@@ -19,7 +19,7 @@ export default function Footer() {
                 Github
               </Link>
             </h1>
-            <p>All Rights Reserved</p>
+            <p> © 2025,All Rights Reserved</p>
           </div>
         </div>
       </div>

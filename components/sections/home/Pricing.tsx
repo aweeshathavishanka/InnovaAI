@@ -97,7 +97,7 @@ export default function Pricing() {
                       " rounded-full bg-black text-white hover:text-white hover:bg-violet-600",
                       plan.id === 3 && "border-yellow-300 border-2"
                     )}>
-                    <Link href={"/"}>Get Started</Link>
+                    <Link href={plan.paymentLink}>Get Started</Link>
                   </Button>
                   <div className=" flex flex-col gap-y-2">
                     {plan.features.map((feature) => (

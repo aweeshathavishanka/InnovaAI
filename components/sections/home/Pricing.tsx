@@ -15,7 +15,7 @@ const pricingPlans = [
       "Access to basic AI-powered writing tools",
       "Limited analytics dashboard",
     ],
-    paymentLink: "/checkout",
+    paymentLink: "https://buy.stripe.com/test_6oE8y52ST9az6645kl",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const pricingPlans = [
       "Access to analytics and performance insights",
       "Priority email support",
     ],
-    paymentLink: "/checkout",
+    paymentLink: "https://buy.stripe.com/test_bIYg0x655biHgKI5km",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const pricingPlans = [
       "Premium analytics and reporting tools",
       "24/7 priority support",
     ],
-    paymentLink: "/checkout",
+    paymentLink: "https://buy.stripe.com/test_00g3dL2STgD1fGE4gj",
   },
 ];
 
